@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../kittygram"
+		},
+		{
+			"name": "kittygram_plus-1",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,41 @@
+GET http://127.0.0.1:8000/users/ HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2OTU0NjU3LCJqdGkiOiJhZTU0ZjI3ZTJkMWY0M2JhYWVjNzEzZDdmMDc1NWUwMSIsInVzZXJfaWQiOjF9.vTx42r0i_r8A_vIEt8dePUWvi-rC5MXD-swtoPwKMME
+
+###
+
+GET http://127.0.0.1:8000/cats/ HTTP/1.1
+###
+
+POST http://127.0.0.1:8000/cats/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "dracon",
+    "color": "black",
+    "birth_year": 1992,
+    "owner": 1,
+    "achievements": [
+        {"name": "Поймал рыбу"},
+        {"name": "сьел кота"}
+    ]
+}
+###
+
+PATCH http://127.0.0.1:8000/cats/1/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "dracon",
+    "color": "black",
+    "birth_year": 1992
+}
+###
+
+POST http://127.0.0.1:8000/owners/ HTTP/1.1
+content-type: application/json
+
+{
+    "first_name": "draco",
+    "last_name": "tern"
+}
+###
